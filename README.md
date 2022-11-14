@@ -73,3 +73,17 @@ Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
 4. en la terminal instale el cypress-xpath con el siguiente comando: npm install -D cypress-xpath
 5. despues incie el Cypress por medio de las instruccion cypress open
 6. una vez habilitado el cypress inicie su instancia de ghost (5.19 -tags ,posts)(5.22 - pages , staff ,other).
+
+### Evidencias
+
+Se proporcionan videos que evidencian la ejecución de las pruebas:
+
+* [Pages](https://www.youtube.com/watch?v=Q28OnkYSTuU)
+* [Posts](https://www.youtube.com/watch?v=vRTrMQeeyZ8)
+* [Staff](https://www.youtube.com/watch?v=Nl20coKiHqU)
+* [Tags](https://www.youtube.com/watch?v=1ioDMdKEP-0)
+* [Other](https://www.youtube.com/watch?v=0KR4VE7TZhU)
+
+El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinaron en este nuevo, para verificar el trabajo efectuado por los integrantes, o para ver el historial de los commits, por favor entre aqui:
+
+[Repositorio Cypress](https://github.com/AndresFUlloa/cypressGhostE2E)
