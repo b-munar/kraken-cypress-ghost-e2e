@@ -41,7 +41,19 @@
 
 Se proporcionan videos que evidencian la ejecución de las pruebas:
 
-* <a href="https://www.youtube.com/watch?v=yz1a2R7rlRA&t=1s" target="_blank">About</a>
+* [About](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=1s)
+* [Change Password](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=16s)
+* [Pages](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=65s)
+* [Posts](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=247s)
+* [Profile](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=343s)
+* [Sign Out](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=357s)
+* [Staff](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=373s)
+* [Tags](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=535s)
+
+El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinaron en este nuevo, para verificar el trabajo efectuado por los integrantes, o para ver el historial de los commits, por favor entre aqui:
+
+[Repositorio Kraken](https://github.com/b-munar/krakenGhostE2E)
+
 
 ## Cypress
 
