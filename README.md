@@ -41,7 +41,7 @@
 
 Se proporcionan videos que evidencian la ejecución de las pruebas:
 
-* [About](https://www.youtube.com/watch?v=yz1a2R7rlRA&t=1s)
+* <a href="https://www.youtube.com/watch?v=yz1a2R7rlRA&t=1s" target="_blank">About</a>
 
 ## Cypress
 
