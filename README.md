@@ -44,6 +44,8 @@
 1. Ejecute el comando npm run kraken-node-run
 1. Cada archivo de pruebas se ejecutará y los resultados se almacenarán en la carpeta reports. 
 
+Versión de Ghost: 3.41.1
+
 ### Evidencias
 
 Se proporcionan videos que evidencian la ejecución de las pruebas:
