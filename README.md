@@ -12,7 +12,7 @@
 
 ## Kraken
 
-###Escenarios de Prueba
+### Escenarios de Prueba
 
 1. Crear Página: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Páginas, elijo la opción Crear Página, ingreso la información y elijo la opción Publicar. La página queda añadida a la lista de páginas publicadas.
 2. Editar Página: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Páginas, escojo una página, ingreso la nueva información y elijo la opción Actualizar. La página queda actualizada con la nueva información.
@@ -35,6 +35,8 @@
 11. Cambiar Contraseña: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario , elijo la opción de ver perfil, ingreso la nueva constraseña y elijo la opción de cambiar constraseña. La contraseña es actualizada para el usuario.
 12. Navegar a Acerca De: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario y elijo la opción de Acerca De. En la pantalla se puede observar información acerca de la aplicación Ghost.
 
+### Pasos para ejecutar las pruebas
+
 ## Cypress
 
 Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
@@ -45,7 +47,7 @@ Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
 
 ![image](https://user-images.githubusercontent.com/111555319/201562865-19fcfe94-2849-4b91-b5a0-0398b889362a.png)
 
-PASOS PARA EJECUTAR LAS PRUEBAS
+### PASOS PARA EJECUTAR LAS PRUEBAS
 
 1. Clone el repositorio de la entrega.
 2. Abra una terminal con privilegios de Administrador.
