@@ -33,3 +33,21 @@
 11. Cambiar Contraseña: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario , elijo la opción de ver perfil, ingreso la nueva constraseña y elijo la opción de cambiar constraseña. La contraseña es actualizada para el usuario.
 12. Navegar a Acerca De: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario y elijo la opción de Acerca De. En la pantalla se puede observar información acerca de la aplicación Ghost.
 
+## Escenarios de prueba Cypress
+
+Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
+
+
+![image](https://user-images.githubusercontent.com/111555319/201560353-2b71fd09-4c8f-4f55-8903-0cbe819f89c5.png)
+
+
+![image](https://user-images.githubusercontent.com/111555319/201562865-19fcfe94-2849-4b91-b5a0-0398b889362a.png)
+
+PASOS PARA EJECUTAR LAS PRUEBAS
+
+1. Clone el repositorio de la entrega.
+2. Abra una terminal con privilegios de Administrador.
+3. Usando el comando cd ubíquese en su terminal en la raíz del repositorio.
+4. en la terminal instale el cypress-xpath con el siguiente comando: npm install -D cypress-xpath
+5. despues incie el Cypress por medio de las instruccion cypress open
+6. una vez habilitado el cypress inicie su instancia de ghost (5.19 -tags ,posts)(5.22 - pages , staff ,other).
