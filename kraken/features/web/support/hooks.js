@@ -22,7 +22,7 @@ AfterStep(async function (scenario) {
   await this.driver.saveScreenshot(
       './screenshots/'+path+'/'+
       path +
-      Math.round(+new Date() / 1000) +
+      Math.round(+new Date() / 100) +
       ".png"
   );
 })
