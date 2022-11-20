@@ -22,3 +22,5 @@ Scenario: As an administrator user I create a post - Como usuario administrador 
   And I wait for 1 seconds
   And I click Publish in Post
   And I wait for 1 seconds
+  And I wait for 1 seconds
+  And I wait for 1 seconds

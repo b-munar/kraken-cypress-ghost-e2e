@@ -62,3 +62,26 @@ When('I click any Post', async function(){
   let element = await this.driver.$('a[class="ember-view permalink gh-list-data gh-post-list-title"]');
   return await element.click();
 })
+
+When('I enter Post Title {string} V4.44', async function(title){
+    let element = await this.driver.$('textarea[placeholder="Post title"]');
+    return await element.setValue(title);
+  })
+
+When('I click Publish Dropdown in Post V4.44', async function(){
+    let element = await this.driver.$('div[class="gh-publishmenu ember-view"]');
+    return await element.click();
+  })
+
+When('I click Publish in Post V4.44', async function(){
+    let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view"]');
+    return await element.click();
+  })
+
+Then('I click confirm Publish V4.44', async function(){
+    let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-btn-icon ember-view"]');
+    return await element.click();
+  })
+
+  
+  
