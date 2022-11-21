@@ -10,14 +10,6 @@
 * Sign In: Esta funcionalidad permite ingresar a la aplicación con una cuenta ya creada.
 * Sign Up: Esta funcionalidad permite Crear una cuenta para utilizar la aplicación.
 
-## Funcionalidades bajo pruebas Versión Ghost 4.44.0
-
-* Crear Página y añadirla a la lista de páginas del sitio.
-* Crear Post y añadirlo a la lista de posts del sitio.
-* Crear Etiqueta y añadirla a la lista de etiquetas del sitio.
-* Enviar invitación a un nuevo miembro de Staff.
-* Navegar y visitar el perfil de usuario.
-
 ## Kraken
 
 ### Escenarios de Prueba
@@ -42,6 +34,14 @@
 10. Cerrar sesión: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario y elijo la opción de cerrar sesión. La sesión finaliza y vuelvo a la página de iniciar sesión.
 11. Cambiar Contraseña: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario , elijo la opción de ver perfil, ingreso la nueva constraseña y elijo la opción de cambiar constraseña. La contraseña es actualizada para el usuario.
 12. Navegar a Acerca De: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario y elijo la opción de Acerca De. En la pantalla se puede observar información acerca de la aplicación Ghost.
+
+## Funcionalidades bajo pruebas Versión Ghost 4.44.0
+
+* Crear Página: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Páginas, elijo la opción Crear Página, ingreso la información y elijo la opción Publicar. La página queda añadida a la lista de páginas publicadas.
+* Crear Post: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Posts, elijo la opción Crear Post, ingreso la información y elijo la opción Publicar. El post queda añadida a la lista de posts publicados.
+* Crear Tag sin Descripción: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Tags, elijo la opción Crear Tag, ingreso el nombre y elijo la opción Guardar. El tag queda añadido a la lista de tags.
+* Enviar invitación a Staff: Como usuario administrador hago login en la aplicación, me dirijo a la pestaña de Staff, elijo la opción Invitar, ingreso el email y elijo la opción Enviar Invitación. La invitación se envía y queda añadida a la lista de invitaciones.
+* Observar información de perfil: Como usuario administrador hago login en la aplicación, elijo la opción de desplegar menu de usuario y elijo la opción de ver perfil. En la pantalla se puede observar la información de perfil de usuario.
 
 ### Pasos para ejecutar las pruebas
 
