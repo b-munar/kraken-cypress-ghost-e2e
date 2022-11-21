@@ -144,3 +144,10 @@ El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinar
 En el siguiente enlace se encuentran las 5 incidencias visuales encontradas:
 
 [Reporte Incidencias](https://github.com/catorrese/pruebas_automatizadas_grupo14/issues)
+
+## Video Explicacion
+
+En el siguiente enlace se encuentra el video de explicacion:
+
+[Video Explicacion](https://youtu.be/sv9sVmeMP0c)
+
