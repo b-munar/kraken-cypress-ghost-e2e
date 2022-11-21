@@ -10,7 +10,7 @@
 * Sign In: Esta funcionalidad permite ingresar a la aplicación con una cuenta ya creada.
 * Sign Up: Esta funcionalidad permite Crear una cuenta para utilizar la aplicación.
 
-##Funcionalidades bajo pruebas Versión Ghost 4.44.0
+## Funcionalidades bajo pruebas Versión Ghost 4.44.0
 
 * Crear Página y añadirla a la lista de páginas del sitio.
 * Crear Post y añadirlo a la lista de posts del sitio.
