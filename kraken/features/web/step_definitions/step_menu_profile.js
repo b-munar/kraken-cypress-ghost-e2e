@@ -17,3 +17,13 @@ When('I click in menu Profile', async function(){
     let element = await this.driver.$('a[href="#/signout/"]');
     return await element.click();
   })
+
+  When('I click in menu Profile V4.44', async function(){
+    let element = await this.driver.$('div[class="gh-user-avatar relative"]');
+    return await element.click();
+  })
+
+  When('I click in user Staff {kraken-string} V4.44', async function(name){
+    let element = await this.driver.$('a[href="#/settings/staff/'+name+'/"]');
+    return await element.click();
+})

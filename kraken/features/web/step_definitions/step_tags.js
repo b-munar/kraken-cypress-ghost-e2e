@@ -40,3 +40,13 @@ When('I click delete 2 for Tag', async function(){
   let element = await this.driver.$('button[class="gh-btn gh-btn-red gh-btn-icon ember-view"]');
   return await element.click();
 })
+
+When('I click save for Tag V4.44', async function(){
+  let element = await this.driver.$('button[class="gh-btn gh-btn-primary gh-btn-icon ember-view"]');
+  return await element.click();
+})
+
+When('I click delete for Tag V4.44', async function(){
+  let element = await this.driver.$('button[class="gh-btn gh-btn-red gh-btn-icon"]');
+  return await element.click();
+})

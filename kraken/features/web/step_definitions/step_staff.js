@@ -119,3 +119,28 @@ Then('I check there is only one invitation for email {kraken-string}', async fun
   }));
   expect(count).to.equal(1)
 })
+
+When('I click Settings V4.44', async function(){
+  let element = await this.driver.$('a[href="#/settings/"]');
+  return await element.click();
+})
+
+When('I click Staff V4.44', async function(){
+  let element = await this.driver.$('a[href="#/settings/staff/"]');
+  return await element.click();
+})
+
+When('I click Invite people V4.44', async function(){
+  let element = await this.driver.$('button[class="gh-btn gh-btn-primary"]');
+  return await element.click();
+})
+
+When('I enter invite email {kraken-string} V4.44', async function(email){
+  let element = await this.driver.$('input[name="email"]');
+  return await element.setValue(email);
+})
+
+When('I click Send invitation V4.44', async function(){
+  let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-btn-icon ember-view"]');
+  return await element.click();
+})

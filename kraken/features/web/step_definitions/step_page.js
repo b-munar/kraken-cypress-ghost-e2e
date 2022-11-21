@@ -125,3 +125,18 @@ Then('I check the page is deleted with title {kraken-string}', async function(ti
   }));
   expect(found).to.equal(false)
 })
+
+When('I enter title {kraken-string} V4.44', async function(title){
+  let element = await this.driver.$('textarea[placeholder="Page title"]');
+  return await element.setValue(title);
+})
+
+When('I click Publish Dropdown V4.44', async function(){
+  let element = await this.driver.$('div[class="gh-publishmenu ember-view"]');
+  return await element.click();
+})
+
+When('I click Publish V4.44', async function(){
+  let element = await this.driver.$('button[class="gh-btn gh-btn-black gh-publishmenu-button gh-btn-icon ember-view"]');
+  return await element.click();
+})

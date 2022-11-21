@@ -9,7 +9,9 @@ Scenario: As an administrator user I send a staff invitation - Como usuario admi
   And I enter password "<PASSWORD>"
   And I wait for 2 seconds
   And I click sign in
-  And I wait for 5 seconds
+  And I wait for 3 seconds
+  And I wait for 1 seconds
+  And I wait for 1 seconds
   And I click Staff
   And I wait for 2 seconds
   And I click Invite people
