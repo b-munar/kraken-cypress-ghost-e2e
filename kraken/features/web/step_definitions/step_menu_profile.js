@@ -27,3 +27,8 @@ When('I click in menu Profile', async function(){
     let element = await this.driver.$('a[href="#/settings/staff/'+name+'/"]');
     return await element.click();
 })
+
+When('I click About Ghost V4.44', async function(){
+  let element = await this.driver.$('a[href="#/whatsnew/"]');
+  return await element.click();
+})
