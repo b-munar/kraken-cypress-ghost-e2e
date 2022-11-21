@@ -91,6 +91,15 @@ Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
 
 ![image](https://user-images.githubusercontent.com/111555319/201562865-19fcfe94-2849-4b91-b5a0-0398b889362a.png)
 
+## Funcionalidades bajo pruebas Versión Ghost 3.42
+
+* Crear Post.
+* Eliminar Post.
+* Editar Post.
+* Publicar Post agendado a 5 minutos.
+* Crear Post con contenido.
+
+
 ### PASOS PARA EJECUTAR LAS PRUEBAS
 
 1. Clone el repositorio de la entrega.
