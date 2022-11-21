@@ -1,4 +1,4 @@
-# Semana 5 - Pruebas e2e
+# Semana 6 - Pruebas e2e
 ## Funcionalidades bajo pruebas
 
 * Administrar Páginas (Pages): Esta funcionalidad comprende Crear, Editar, Listar y Borrar páginas del usuario.
@@ -9,6 +9,14 @@
 * Explorar Información Relacionada a Ghost: Esta funcionalidad comprende navegar a vistas que despliegan información acerca de Ghost, novedades, etc.
 * Sign In: Esta funcionalidad permite ingresar a la aplicación con una cuenta ya creada.
 * Sign Up: Esta funcionalidad permite Crear una cuenta para utilizar la aplicación.
+
+##Funcionalidades bajo pruebas Versión Ghost 4.44.0
+
+* Crear Página y añadirla a la lista de páginas del sitio.
+* Crear Post y añadirlo a la lista de posts del sitio.
+* Crear Etiqueta y añadirla a la lista de etiquetas del sitio.
+* Enviar invitación a un nuevo miembro de Staff.
+* Navegar y visitar el perfil de usuario.
 
 ## Kraken
 
