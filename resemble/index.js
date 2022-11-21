@@ -39,6 +39,11 @@ async function executeTest() {
             misMatchPercentage: data.misMatchPercentage,
             diffBounds: data.diffBounds,
             analysisTime: data.analysisTime,
+            refImage: '../../../' + krakenPath + pair[0] + "/" + refFiles[i],
+            compImage: '../../../' + krakenPath + pair[1] + "/" + compFiles[i],
+            comparison: `./compare-step${i}.png`,
+            verRef: 'Ghost 3.41.1',
+            compRef: 'Ghost 4.44.0'
           };
           fs.writeFileSync(
             `./reports/${datetime}/${pair[0]}/compare-step${i}.png`,
@@ -46,60 +51,99 @@ async function executeTest() {
           );
         }
         resultInfo[pair[0]] = stepsInfo;
+        fs.writeFileSync(
+          `./reports/${datetime}/${pair[0]}/scenario.html`,
+          createScenario(datetime, stepsInfo, pair[0], 'Kraken')
+        );
+        fs.copyFileSync("./index.css", `./reports/${datetime}/${pair[0]}/index.css`);
+        console.log(
+          "------------------------------------------------------------------------------------"
+        );
+        console.log("Scenario report finished: " + pair[0]);
       }
     }
   }
-  /* fs.writeFileSync(
-    `./results/${datetime}/report.html`,
+  fs.writeFileSync(
+    `./reports/${datetime}/report.html`,
     createReport(datetime, resultInfo)
   );
-  fs.copyFileSync("./index.css", `./results/${datetime}/index.css`);
+  fs.copyFileSync("./index.css", `./reports/${datetime}/index.css`);
   console.log(
     "------------------------------------------------------------------------------------"
   );
-  console.log("Execution finished. Check the report in the reports folder"); */
+  console.log("Execution finished. Check the report in the reports folder");
   return resultInfo;
 }
 (async () => console.log(await executeTest()))();
 
-function browser(b, info) {
+function step(b, info) {
   return `<div class=" browser" id="test0">
   <div class=" btitle">
-      <h2>Browser: ${b}</h2>
+      <h2>Step #${b}</h2>
       <p>Data: ${JSON.stringify(info)}</p>
   </div>
   <div class="imgline">
     <div class="imgcontainer">
-      <span class="imgname">Reference</span>
-      <img class="img2" src="before-${b}.png" id="refImage" label="Reference">
+      <span class="imgname">Reference Ver: ${info.verRef}</span>
+      <img class="img2" src=${info.refImage} id="refImage" label="Reference">
     </div>
     <div class="imgcontainer">
-      <span class="imgname">Test</span>
-      <img class="img2" src="after-${b}.png" id="testImage" label="Test">
+      <span class="imgname">Test Ver: ${info.compRef}</span>
+      <img class="img2" src=${info.compImage} id="testImage" label="Test">
     </div>
   </div>
   <div class="imgline">
     <div class="imgcontainer">
       <span class="imgname">Diff</span>
-      <img class="imgfull" src="./compare-${b}.png" id="diffImage" label="Diff">
+      <img class="imgfull" src=${info.comparison} id="diffImage" label="Diff">
     </div>
   </div>
 </div>`;
 }
 
+function scenarios(key){
+  return `
+  <li><a href="./${key}/scenario.html">${key}</a></li>
+  `
+}
+
 function createReport(datetime, resInfo) {
+  const llaves = Object.keys(resInfo);
   return `
   <html>
       <head>
-          <title> VRT Report </title>
+          <title>Reporte VRT </title>
           <link href="index.css" type="text/css" rel="stylesheet">
       </head>
       <body>
           <h1>Reporte de diferencias visuales 
           </h1>
           <p>Executed: ${datetime}</p>
+          <h4>Escoja un escenario para ver la comparación visual:
+            </h4>
+          <ol>
+              ${llaves.map((llave) => scenarios(llave))}
+          </ol>
+      </body>
+  </html>`;
+}
+
+function createScenario(datetime, resInfo, name, tool) {
+  const lista = Object.values(resInfo);
+  return `
+  <html>
+      <head>
+          <title> ${name}  </title>
+          <link href="index.css" type="text/css" rel="stylesheet">
+      </head>
+      <body>
+          <h1>Reporte de Escenario: ${name} 
+          </h1>
+          <p>Executed: ${datetime}</p>
+          <h3>Herramienta de Pruebas: ${tool} 
+          </h3>
           <div id="visualizer">
-              ${config.browsers.map((b) => browser(b, resInfo[b]))}
+              ${lista.map((value, index) => step(index, value))}
           </div>
       </body>
   </html>`;
