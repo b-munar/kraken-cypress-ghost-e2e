@@ -83,6 +83,8 @@ El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinar
 
 ## Cypress
 
+
+
 Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
 
 
@@ -104,10 +106,11 @@ Las Funcionalidades selecionadas para la ejecucion de los set de pruebas:
 
 1. Clone el repositorio de la entrega.
 2. Abra una terminal con privilegios de Administrador.
-3. Usando el comando cd ubíquese en su terminal en la raíz del repositorio.
-4. en la terminal instale el cypress-xpath con el siguiente comando: npm install -D cypress-xpath
-5. despues incie el Cypress por medio de las instruccion cypress open
-6. una vez habilitado el cypress inicie su instancia de ghost (5.19 -tags ,posts)(5.22 - pages , staff ,other).
+3. Usando el comando cd dirijase a la carpeta cypress. dentro de esta se encontrara otra carpeta con el mismo nombre , la cual contendra 2 directorios deacuerdo a la version de ghost a la que van dirigidas , si queremos ejecutar un set de pruebas determinado , retire (mueva) las carpetas sobrantes a otro directorio , y extraiga en el directorio actual (cypress) el contenido de la carpeta para la version de ghost que se quiere probar,  para que la estructura de directorios pueda ser reconocida por cypress.
+4. instale el cypress-xpath con el siguiente comando: npm install -D cypress-xpath en la terminal.
+5. inicie su instancia de ghost deacuerdo al set de pruebas selecionado (5.19 o 3.42).
+6. despues incie el Cypress por medio de las instruccion cypress open en la terminal.
+ 
 
 ### Evidencias
 
