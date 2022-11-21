@@ -134,3 +134,9 @@ El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinar
 5. Ejecute el comando npm install
 6. Ejecute el comando node index.js
 7. Se ejecutará el script comparando las capturas de pantalla de cada escenario ejecutado y se comparará con las de la nueva versión. En la carpeta reports se encuentra el archivo reporte.html, el cual contiene el reporte de comparación visual.
+
+## Reporte de incidencias visuales
+
+En el siguiente enlace se encuentran las 5 incidencias visuales encontradas:
+
+[Reporte Incidencias](https://github.com/catorrese/pruebas_automatizadas_grupo14/issues)
