@@ -113,3 +113,15 @@ Se proporcionan videos que evidencian la ejecución de las pruebas:
 El trabajo se efectuó inicialmente en dos repositorios y finalmente se combinaron en este nuevo, para verificar el trabajo efectuado por los integrantes, o para ver el historial de los commits, por favor entre aqui:
 
 [Repositorio Cypress](https://github.com/AndresFUlloa/cypressGhostE2E)
+
+## Resemble JS
+
+### PASOS PARA EJECUTAR EL REPORTE
+
+1. Clone el repositorio de la entrega.
+2. Ejecute los escenarios de prueba que entrarán al reporte (puede ejecutar todos los escenarios de ambas herramientas).
+3. Abra una terminal.
+4. Usando el comando cd ubíquese en su terminal en la raíz del repositorio de Resemble (carpeta Resemble).
+5. Ejecute el comando npm install
+6. Ejecute el comando node index.js
+7. Se ejecutará el script comparando las capturas de pantalla de cada escenario ejecutado y se comparará con las de la nueva versión. En la carpeta reports se encuentra el archivo reporte.html, el cual contiene el reporte de comparación visual.
